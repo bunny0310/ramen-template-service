@@ -6,6 +6,7 @@ import java.sql.Timestamp;
 public class Template extends BaseEntity {
     private Integer userId;
     private String template;
+    private String alias;
 
     public Template() {
 
@@ -15,6 +16,7 @@ public class Template extends BaseEntity {
         super(id, createdAt, updatedAt);
         this.userId = userId;
         this.template = template;
+        this.alias = alias;
     }
 
     public Integer getUserId() {
@@ -32,5 +34,13 @@ public class Template extends BaseEntity {
 
     public void setTemplate(String template) {
         this.template = template;
+    }
+
+    public String getAlias() {
+        return alias;
+    }
+
+    public void setAlias(String alias) {
+        this.alias = alias;
     }
 }
